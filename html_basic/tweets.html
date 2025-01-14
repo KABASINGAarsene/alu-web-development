@@ -6,20 +6,43 @@
     <title>My Tweets</title>
 </head>
 <body>
-    <h1>My Tweets</h1>
+    <!-- Header with navigation links -->
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tweets.html">My Tweets</a></li>
+        </ul>
+    </header>
     
-    <p>Here is a tweet I posted:</p>
+    <!-- Main content of the page -->
+    <main>
+        <!-- Article with page content -->
+        <article>
+            <h1>My Tweets</h1>
+            <p>Here is a tweet I posted:</p>
 
-    <!-- Embed a tweet -->
-    <blockquote class="twitter-tweet">
-        <p lang="en" dir="ltr">Just finished a great project! #webdevelopment #coding</p>
-        &mdash; Guillaume (@Guillaume) <a href="https://twitter.com/Guillaume/status/1234567890">January 1, 2025</a>
-    </blockquote>
-    
-    <p><a href="index.html">Back to Homepage</a></p>
+            <!-- Embed a tweet -->
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">Just finished a great project! #webdevelopment #coding</p>
+                &mdash; Guillaume (@Guillaume) <a href="https://twitter.com/Guillaume/status/1234567890">January 1, 2025</a>
+            </blockquote>
 
-    <!-- Twitter script to load the embedded tweet -->
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <p><a href="index.html">Back to Homepage</a></p>
+
+            <!-- Twitter script to load the embedded tweet -->
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </article>
+
+        <!-- Aside with placeholder text -->
+        <aside>
+            <p>Placeholder to add comment thread later.</p>
+        </aside>
+    </main>
+
+    <!-- Footer with Made by info -->
+    <footer>
+        <p>Made by Guillaume - <a href="https://www.holbertonschool.com/" target="_blank">here</a></p>
+    </footer>
 </body>
 </html>
 
