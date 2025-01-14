@@ -1,0 +1,48 @@
+/* Styling the main content area */
+main {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+/* Styling the article */
+article {
+    margin-bottom: 20px;
+}
+
+/* Styling the aside */
+aside {
+    background-color: #e9e9e9;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Styling headings */
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Styling paragraphs */
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Styling the image */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Styling links in the content */
+a {
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
