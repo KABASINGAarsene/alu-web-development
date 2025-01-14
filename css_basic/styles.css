@@ -115,3 +115,20 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;  /* Stack article and aside vertically */
+    }
+
+    article {
+        flex: auto;  /* Allow article to take up the full width */
+        margin-right: 0;
+    }
+
+    aside {
+        flex: auto;  /* Allow aside to take up the full width */
+        margin-top: 20px;
+    }
+}
+
