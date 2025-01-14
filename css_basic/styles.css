@@ -1,49 +1,61 @@
-/* General reset for margin, padding, and box-sizing */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Setting the default font and background color */
+/* Base styling */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
-    color: #333;
-    display: flex;               /* Make the body a flex container */
-    flex-direction: column;      /* Stack header, main, and footer vertically */
-    height: 100vh;               /* Make the body take up full viewport height */
 }
 
-/* Styling the header */
 header {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 10px 0;
 }
 
-/* Styling the header's unordered list */
 header ul {
     list-style-type: none;
-    display: flex;
-    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-header li {
+header ul li {
     display: inline;
+    margin: 0 15px;
 }
 
-header a {
+header ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    font-size: 18px;
 }
 
-header a:hover {
-    background-color: #575757;
+header .logo {
+    font-size: 30px;
+    color: #f4f4f4;
+    margin-right: 20px;
 }
 
-/* Styling the footer */
+/* Main content styling */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    padding: 20px;
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+    margin-right: 20px;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Footer styling */
 footer {
     background-color: #333;
     color: white;
@@ -51,84 +63,19 @@ footer {
     padding: 10px;
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Styling the main content area */
-main {
-    display: flex;               /* Make main a flex container */
-    flex-direction: row;         /* Arrange article and aside horizontally */
-    flex: auto;                  /* Allow main to take the remaining space */
-    padding: 20px;
-    background-color: white;
-    margin: 20px;
-    border-radius: 8px;
-}
-
-/* Styling the article */
-article {
-    flex: 2;                     /* Take up 2/3 of the available space */
-    padding: 20px;
-    overflow-y: auto;            /* Enable vertical scrolling */
-    margin-right: 20px;
-}
-
-/* Styling the aside */
-aside {
-    flex: 1;                     /* Take up 1/3 of the available space */
-    padding: 20px;
-    overflow-y: auto;            /* Enable vertical scrolling */
-    background-color: #e9e9e9;
-    border-radius: 8px;
-}
-
-/* Styling headings */
-h1, h2, h3 {
-    color: #333;
-}
-
-/* Styling paragraphs */
-p {
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-/* Styling the image */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Styling links in the content */
-a {
-    color: #007BFF;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
+/* Responsive Design */
+@media screen and (max-width: 768px) {
     main {
-        flex-direction: column;  /* Stack article and aside vertically */
+        flex-direction: column;
     }
 
-    article {
-        flex: auto;  /* Allow article to take up the full width */
-        margin-right: 0;
+    header ul li {
+        display: block;
+        margin-bottom: 10px;
     }
 
-    aside {
-        flex: auto;  /* Allow aside to take up the full width */
-        margin-top: 20px;
+    header .logo {
+        font-size: 40px;
     }
 }
 
