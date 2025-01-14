@@ -1,5 +1,70 @@
+/* General reset for margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting the default font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;               /* Make the body a flex container */
+    flex-direction: column;      /* Stack header, main, and footer vertically */
+    height: 100vh;               /* Make the body take up full viewport height */
+}
+
+/* Styling the header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Styling the header's unordered list */
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header li {
+    display: inline;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header a:hover {
+    background-color: #575757;
+}
+
+/* Styling the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 /* Styling the main content area */
 main {
+    display: flex;               /* Make main a flex container */
+    flex-direction: row;         /* Arrange article and aside horizontally */
+    flex: auto;                  /* Allow main to take the remaining space */
     padding: 20px;
     background-color: white;
     margin: 20px;
@@ -8,14 +73,18 @@ main {
 
 /* Styling the article */
 article {
-    margin-bottom: 20px;
+    flex: 2;                     /* Take up 2/3 of the available space */
+    padding: 20px;
+    overflow-y: auto;            /* Enable vertical scrolling */
+    margin-right: 20px;
 }
 
 /* Styling the aside */
 aside {
+    flex: 1;                     /* Take up 1/3 of the available space */
+    padding: 20px;
+    overflow-y: auto;            /* Enable vertical scrolling */
     background-color: #e9e9e9;
-    padding: 10px;
-    margin-top: 20px;
     border-radius: 8px;
 }
 
