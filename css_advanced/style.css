@@ -297,4 +297,63 @@ body {
 #membership .membership-item button:hover {
     background-color: #520b7f; /* Darker purple on hover */
 }
+/* General Styling for the FAQ Section */
+#faq {
+    background-color: #ffffff; /* White background for the FAQ section */
+    padding: 50px 20px; /* Vertical padding with some horizontal padding */
+    text-align: center; /* Center the content */
+}
+
+/* Title Styling */
+#faq h1 {
+    font-size: 36px; /* Font size for the title */
+    color: #333333; /* Dark color for the title */
+    margin-bottom: 30px; /* Space below the title */
+}
+
+/* Block of Text Under Title */
+#faq .description {
+    font-size: 16px; /* Font size for the description */
+    color: #666666; /* Lighter color for the text */
+    max-width: 800px; /* Limit the width of the text */
+    margin: 0 auto 50px; /* Center the text and add spacing below */
+    line-height: 1.6; /* Line height for readability */
+}
+
+/* Grid Container for FAQ Blocks */
+#faq .faq-container {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Spacing between the grid items */
+    max-width: 1200px; /* Limit the width of the grid */
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Individual FAQ Block */
+#faq .faq-item {
+    background-color: #f9f9f9; /* Light background for each block */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside each block */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+#faq .faq-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* FAQ Block Title */
+#faq .faq-item h3 {
+    font-size: 20px; /* Font size for the title */
+    color: #333333; /* Dark color for the title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* FAQ Block Text */
+#faq .faq-item p {
+    font-size: 14px; /* Font size for the text */
+    color: #666666; /* Lighter color for the text */
+    line-height: 1.5; /* Line height for readability */
+}
 
