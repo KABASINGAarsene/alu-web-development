@@ -212,4 +212,89 @@ body {
     font-size: 14px;
     font-weight: bold; /* Bold text for duration */
 }
+/* General Styles for the Membership Section */
+#membership {
+    background-color: #f4f4f4; /* Set background color for the section */
+    padding: 50px 0; /* Vertical padding */
+    text-align: center; /* Center content */
+}
+
+/* Title Styling */
+#membership h2 {
+    color: #6a0dad; /* Purple color for the title */
+    font-size: 32px; /* Font size for the title */
+    margin-bottom: 40px; /* Spacing below the title */
+}
+
+/* Membership Block Styling */
+#membership .membership-container {
+    display: flex;
+    justify-content: center; /* Center the membership items horizontally */
+    gap: 30px; /* Spacing between each membership item */
+    flex-wrap: wrap; /* Allow wrapping to the next row if needed */
+    max-width: 1200px; /* Limit the width of the membership block */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Individual Membership Item */
+#membership .membership-item {
+    width: 220px; /* Adjust the width of each item */
+    background-color: #fff; /* White background for each item */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px; /* Padding inside each item */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center content inside the item */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+#membership .membership-item:hover {
+    transform: translateY(-10px); /* Lift the item slightly on hover */
+}
+
+/* Icon Styling */
+#membership .membership-item .icon {
+    width: 50px; /* Set icon size */
+    height: 50px; /* Set icon size */
+    background-color: #6a0dad; /* Purple background for the icon */
+    border-radius: 50%; /* Circular icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Space below the icon */
+}
+
+#membership .membership-item .icon img {
+    width: 25px; /* Adjust icon size inside the circle */
+    height: 25px; /* Adjust icon size */
+}
+
+/* Heading and Text Styling */
+#membership .membership-item h3 {
+    font-size: 22px; /* Font size for the heading */
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+#membership .membership-item p {
+    font-size: 14px; /* Font size for the description */
+    color: #666; /* Lighter color for the text */
+    margin-bottom: 20px; /* Space below the text */
+    line-height: 1.5; /* Line height for readability */
+}
+
+/* Button Styling */
+#membership .membership-item button {
+    background-color: #6a0dad; /* Purple background for the button */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 30px; /* Rounded corners */
+    padding: 12px 30px; /* Padding inside the button */
+    font-size: 16px; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+#membership .membership-item button:hover {
+    background-color: #520b7f; /* Darker purple on hover */
+}
 
