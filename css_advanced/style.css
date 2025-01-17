@@ -62,4 +62,154 @@ header nav a:hover {
 #banner button:hover {
     background-color: #0056b3; /* Replace with Figma hover color */
 }
+/* Common Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Replace with the font used in Figma */
+    line-height: 1.6;
+    color: #333; /* Replace with Figma color */
+}
+
+/* Quote Section Styling */
+#quote {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    background-color: #f1f1f1; /* Replace with Figma background color */
+    padding: 50px;
+    text-align: center; /* Center-aligns text */
+}
+
+#quote div {
+    max-width: 800px; /* Restricts width for better readability */
+}
+
+#quote blockquote {
+    font-size: 24px; /* Replace with Figma font size */
+    font-style: italic;
+    color: #555; /* Replace with Figma color */
+    margin-bottom: 20px;
+}
+
+#quote p {
+    font-size: 18px; /* Replace with Figma font size */
+    color: #777; /* Replace with Figma color */
+    margin: 10px 0;
+}
+
+#quote img {
+    width: 100px; /* Replace with Figma value */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+/* General Styles for the Section */
+#videos {
+    background-color: #fff; /* White background */
+    padding: 50px 0; /* Vertical padding */
+    text-align: center; /* Center the section title */
+}
+
+#videos h2 {
+    color: #6a0dad; /* Purple color for the title */
+    font-size: 32px; /* Adjust size as per Figma */
+    margin-bottom: 30px; /* Correct spacing below the title */
+}
+
+/* Container for the Video List */
+#videos .video-container {
+    display: flex;
+    justify-content: center; /* Centers the list horizontally */
+    gap: 30px; /* Spacing between items */
+    flex-wrap: wrap; /* Allows wrapping to the next row if needed */
+    max-width: 1200px; /* Limit the width of the video list container */
+    margin: 0 auto; /* Centers the container */
+}
+
+/* Styling for each Video Item */
+#videos .video-item {
+    width: 220px; /* Adjust width based on Figma design */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure content doesn't overflow the rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for each video item */
+    background-color: #f9f9f9; /* Light background for each item */
+    position: relative; /* For positioning the play icon */
+    text-align: left; /* Align text to the left */
+    padding: 15px;
+}
+
+#videos .video-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+#videos .video-item .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the play icon */
+    width: 50px; /* Size of the play icon */
+    height: 50px;
+}
+
+/* Title of the Video */
+#videos .video-item h3 {
+    font-size: 18px; /* Adjust size as per Figma */
+    color: #333; /* Dark color for the title */
+    margin-top: 15px;
+    font-weight: bold; /* Title in bold */
+}
+
+/* Description of the Video */
+#videos .video-item p {
+    font-size: 14px; /* Adjust size as per Figma */
+    color: #666; /* Lighter color for the description */
+    margin-top: 10px;
+    line-height: 1.5; /* Line height for better readability */
+}
+
+/* Author Block */
+#videos .video-item .author {
+    display: flex;
+    align-items: center; /* Align image and text horizontally */
+    margin-top: 15px;
+}
+
+#videos .video-item .author img {
+    width: 40px; /* Image size */
+    height: 40px;
+    border-radius: 50%; /* Round image */
+    margin-right: 10px; /* Space between image and text */
+}
+
+#videos .video-item .author h4 {
+    color: #6a0dad; /* Purple text for the author's name */
+    font-size: 16px; /* Adjust size as per Figma */
+    font-weight: normal; /* Normal weight for author's name */
+}
+
+/* Rating Block */
+#videos .video-item .rating {
+    display: flex;
+    justify-content: space-between; /* Align stars to the left and duration to the right */
+    align-items: center;
+    margin-top: 10px;
+}
+
+#videos .video-item .rating .stars {
+    display: flex;
+    gap: 5px; /* Space between stars */
+}
+
+#videos .video-item .rating .stars img {
+    width: 20px; /* Star size */
+    height: 20px;
+}
+
+#videos .video-item .rating .duration {
+    color: #6a0dad; /* Purple color for the duration */
+    font-size: 14px;
+    font-weight: bold; /* Bold text for duration */
+}
 
