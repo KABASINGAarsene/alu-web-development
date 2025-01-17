@@ -1,0 +1,65 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Replace with Figma color */
+}
+
+header a img {
+    width: 100px; /* Replace with Figma value */
+    height: auto;
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #333; /* Replace with Figma color */
+    font-size: 16px; /* Replace with Figma value */
+}
+
+header nav a:hover {
+    color: #007BFF; /* Replace with Figma hover color */
+}
+
+/* First Section Styling (Banner) */
+#banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #e9ecef; /* Replace with Figma color */
+}
+
+#banner h1 {
+    font-size: 36px; /* Replace with Figma value */
+    color: #212529; /* Replace with Figma color */
+}
+
+#banner p {
+    font-size: 18px; /* Replace with Figma value */
+    color: #6c757d; /* Replace with Figma color */
+    margin: 10px 0;
+}
+
+#banner button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Replace with Figma color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#banner button:hover {
+    background-color: #0056b3; /* Replace with Figma hover color */
+}
+
