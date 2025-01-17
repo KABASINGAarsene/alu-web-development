@@ -356,4 +356,74 @@ body {
     color: #666666; /* Lighter color for the text */
     line-height: 1.5; /* Line height for readability */
 }
+/* Footer Section Styling */
+footer {
+    background-color: #333333; /* Background color of the footer */
+    color: #ffffff; /* White text color */
+    padding: 20px 0; /* Vertical padding for spacing */
+    text-align: center; /* Center text alignment for small screens */
+}
+
+/* Footer Container */
+footer .footer-container {
+    max-width: 1200px; /* Limit the width of the footer container */
+    margin: 0 auto; /* Center the container */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Wrap items for smaller screens */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+/* Footer Logo */
+footer .logo {
+    display: flex; /* Flex container for logo */
+    align-items: center; /* Align vertically */
+}
+
+footer .logo img {
+    height: 50px; /* Adjust the height of the logo */
+    margin-right: 10px; /* Spacing between logo image and text */
+}
+
+footer .logo span {
+    font-size: 24px; /* Font size for the logo text */
+    font-weight: bold; /* Bold font for emphasis */
+    color: #ffffff; /* White text color */
+}
+
+/* Social Media Links */
+footer .social-links {
+    display: flex; /* Flex container for links */
+    gap: 15px; /* Spacing between links */
+}
+
+footer .social-links a {
+    display: inline-block; /* Inline-block for proper alignment */
+    width: 40px; /* Width of each social media icon */
+    height: 40px; /* Height of each social media icon */
+    background-color: #555555; /* Background color for icons */
+    border-radius: 50%; /* Circular icons */
+    display: flex; /* Center icon inside the circle */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transition: background-color 0.3s ease; /* Hover effect */
+}
+
+footer .social-links a:hover {
+    background-color: #777777; /* Lighter background on hover */
+}
+
+footer .social-links img {
+    width: 20px; /* Adjust the size of the social media icon */
+    height: 20px;
+}
+
+/* Copyright Text */
+footer .copyright {
+    font-size: 14px; /* Smaller font size */
+    color: #cccccc; /* Light grey text */
+    margin-top: 20px; /* Spacing above copyright */
+    text-align: center; /* Centered text */
+}
 
